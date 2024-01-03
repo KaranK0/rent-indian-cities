@@ -1,0 +1,184 @@
+<! DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="app/css/style.css">
+        <title>Real Estate</title>
+    </head>
+
+    <body>
+        <nav class="navbar background">
+            <ul class="nav-list">
+                <div class="logo"><img src="app/img/lenna.jpg" alt="logo"></div>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="rightNav">
+                <input type="text" name="search" id="search">
+                <button class="btn btn">Search</button>
+            </div>
+        </nav>
+        <section class="background firstSection">
+            <div class="box-main">
+                <div class="firstHalf">
+                    <p class="text-big">The Future of Real Estate is here</p>
+                    <p class="text-small">abcd kuch toh kuch toh</p>
+                    <div class="buttons">
+                        <button class="btn">Github Repo</button>
+                    </div>
+                </div>
+                <div class="secondHalf">
+                    <img src="app/img/lenna.jpg" alt="lenna">
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="paras">
+                <p class="sectionTag text-big">State of the art rent evaluation</p>
+                <p class="sectionSubTag text-small"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                    dolore blanditiis molestiae magnam. Eos sit molestiae harum placeat, maxime, nostrum ducimus
+                    aspernatur iste excepturi possimus, sequi id aperiam ut delectus.</p>
+            </div>
+            <div class="thumbnail">
+                <img src="app/img/lenna.jpg" alt="lenna" class="imgFluid">
+            </div>
+        </section>
+        <section class="data-entry">
+            <h1 class="sectionTag text-big"> Rent Evaluation </h1>
+
+
+            <form class="data_form" id="dataform">
+                <div>
+                    <label for="city">City:</label>
+                    <select id="city" name="city">
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="ahmedabad">Ahmedabad</option>
+                        <option value="chennai">Chennai</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="bangalore">Bangalore</option>
+                        <option value="kolkata">Kolkata</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="pune">Pune</option>
+                        <option value="hyderabad">Hyderabad</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="locality">Locality:</label>
+                    <select id="locality" name="locality">
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="test">test</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="seller_type">Type of Seller:</label>
+                    <select id="seller_type" name="seller_type">
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="agent">Agent</option>
+                        <option value="builder">Builder</option>
+                        <option value="owner">Owner</option>
+                    </select>
+                </div>
+                <div>
+
+                    <label for="bedroom">No. of Bedrooms:</label>
+                    <select id="bedroom" name="bedroom">
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                    </select>
+                </div>
+                <div>
+
+                    <label for="bathroom">No. of Bathrooms:</label>
+                    <select id="bathroom" name="bathroom">
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="layout_type">Type of Layout:</label>
+                    <select id="layout_type" name="layout_type">
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="BHK">Agent</option>
+                        <option value="RK">Builder</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="property_type">Type of Property:</label>
+                    <select id="property_type" name="property_type">
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="apartment">Apartment</option>
+                        <option value="independent_floor">Independent Floor</option>
+                        <option value="independent_house">Independent House</option>
+                        <option value="penthouse">Penthouse</option>
+                        <option value="studio-apartment">Studio Apartment</option>
+                        <option value="villa">Villa</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="area">Area:</label>
+                    <input type="number" id="area" name="area">
+                </div>
+                <div>
+                    <label for="furnish_type">Type of Furnishing:</label>
+                    <select id="furnish_type" name="furnish_type">
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="furnished">Furnished</option>
+                        <option value="semi-furnished">Semi Furnished</option>
+                        <option value="un-furnished">Un Furnished</option>
+                    </select>
+                </div>
+                <input type="submit" class="btn btn-dark" value="Submit">
+            </form>
+            <div id="prediction-result">
+                <p class="prediction-placeholder">Predicted rent will be displayed here.</p>
+                <img id="loading-indicator" src="app/img/lenna.jpg" alt="Loading..." style="display: none;">
+            </div>
+        </section>
+
+
+        <script src="app/script.js"> </script>
+
+        <footer class="background">
+            <p class="text-footer">
+                Created by Karan, 2024.
+            </p>
+        </footer>
+    </body>
+
+    </html>
