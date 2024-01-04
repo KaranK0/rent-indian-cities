@@ -78,7 +78,7 @@ formElem.onsubmit = async (e) => {
          throw new Error("A key should be provided to invoke the endpoint");
       }
 
-      const response = await fetch('http://065f9686-c4ad-4160-a03a-bd4c961095b4.southeastasia.azurecontainer.io/score', {
+      const response = await fetch('https://safe-bastion-97948-9cc89d9206c2.herokuapp.com/http://065f9686-c4ad-4160-a03a-bd4c961095b4.southeastasia.azurecontainer.io/score', {
          method: "POST",
          headers: { "Content-Type": "application/json", 'Authorization': ('Bearer ' + api_key) },
          body: JSON.stringify(jsonData)
