@@ -90,9 +90,10 @@ formElem.onsubmit = async (e) => {
 
       const result = await response.json();
       const predictedRent = result.Results.output1[0].HouseRentPrediction;
+      predictedRent = predictedRent.toFixed(2);
 
       // Display predicted rent
-      predictionResultElement.innerHTML = `Predicted house rent: ${predictedRent}`;
+      predictionResultElement.innerHTML = `Predicted house rent: ₹${predictedRent}`;
       loadingIndicator.style.display = "none";
 
    } catch (error) {

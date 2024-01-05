@@ -14,19 +14,14 @@
     <body>
         <nav class="navbar background">
             <ul class="nav-list">
-                <div class="logo"><img src="app/img/lenna.jpg" alt="logo"></div>
+                <div class="logo"><img src="app/img/logo.jpg" alt="logo"></div>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#evaluate">Evaluate</a></li>
             </ul>
-            <div class="rightNav">
-                <input type="text" name="search" id="search">
-                <button class="btn btn">Search</button>
-            </div>
         </nav>
         <section class="background firstSection">
-            <div class="box-main">
+            <div class="box-main" id="home">
                 <div class="firstHalf">
                     <p class="text-big">The Future of Real Estate is here</p>
                     <p class="text-small">abcd kuch toh kuch toh</p>
@@ -35,7 +30,7 @@
                     </div>
                 </div>
                 <div class="secondHalf">
-                    <img src="app/img/lenna.jpg" alt="lenna">
+                    <img src="app/img/logo.jpg" alt="logo">
                 </div>
             </div>
         </section>
@@ -46,11 +41,11 @@
                     dolore blanditiis molestiae magnam. Eos sit molestiae harum placeat, maxime, nostrum ducimus
                     aspernatur iste excepturi possimus, sequi id aperiam ut delectus.</p>
             </div>
-            <div class="thumbnail">
-                <img src="app/img/lenna.jpg" alt="lenna" class="imgFluid">
+            <div class="thumbnail" id="about">
+                <img src="app/img/factors.jpg" alt="factors" class="imgFluid">
             </div>
         </section>
-        <section class="data-entry">
+        <section class="data-entry" id="evaluate">
             <h1 class="sectionTag text-big"> Rent Evaluation </h1>
 
             <form class="data_form" id="dataform">
@@ -135,8 +130,8 @@
                     <label for="layout_type">Type of Layout:</label>
                     <select class="form_input" id="layout_type" name="layout_type">
                         <option value="" disabled selected>Select an option</option>
-                        <option value="BHK">Agent</option>
-                        <option value="RK">Builder</option>
+                        <option value="BHK">BHK</option>
+                        <option value="RK">RK</option>
                     </select>
                 </div>
                 <div>
@@ -166,12 +161,13 @@
                 </div>
                 <input type="submit" class="btn btn-dark" value="Submit">
             </form>
-            <div id="prediction-result">
-                <p class="prediction-placeholder">Predicted rent will be displayed here.</p>
-                <img id="loading-indicator" src="app/img/lenna.jpg" alt="Loading..." style="display: none;">
-            </div>
         </section>
-
+        <section class="prediction-placeholder">
+        <div id="prediction-result">
+            <p>Predicted rent will be displayed here.</p>
+            <img id="loading-indicator" src="app/img/lenna.jpg" alt="Loading..." style="display: none;">
+        </div>
+        </section>
 
         <script src="app/script.js"> </script>
 
