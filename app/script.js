@@ -73,7 +73,7 @@ formElem.onsubmit = async (e) => {
       predictionResultElement.querySelector(".prediction-placeholder").textContent = "";
       loadingIndicator.style.display = "block";
 
-      const api_key = ''
+      const api_key = 'gy3Gt9bIBhLVsuI2g9O9WnPQbQykZD1u'
       if (api_key == '') {
          throw new Error("A key should be provided to invoke the endpoint");
       }
@@ -101,20 +101,6 @@ formElem.onsubmit = async (e) => {
       alert("Failed to get prediction. Please check your input and try again.");
    }
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*    var citeh = document.getElementById("city").value;

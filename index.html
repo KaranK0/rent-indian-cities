@@ -24,9 +24,11 @@
             <div class="box-main" id="home">
                 <div class="firstHalf">
                     <p class="text-big">The Future of Real Estate is here</p>
-                    <p class="text-small">abcd kuch toh kuch toh</p>
+                    <p class="text-small">A machine learning model capable of predicting housing prices in diverse Indian cities with high accuracy</p>
                     <div class="buttons">
+                        <a href="https://github.com/KaranK0/rent-indian-cities">
                         <button class="btn">Github Repo</button>
+                        </a>
                     </div>
                 </div>
                 <div class="secondHalf">
@@ -36,10 +38,8 @@
         </section>
         <section class="section">
             <div class="paras">
-                <p class="sectionTag text-big">State of the art rent evaluation</p>
-                <p class="sectionSubTag text-small"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-                    dolore blanditiis molestiae magnam. Eos sit molestiae harum placeat, maxime, nostrum ducimus
-                    aspernatur iste excepturi possimus, sequi id aperiam ut delectus.</p>
+                <p class="sectionTag text-big">Problem</p>
+                <p class="sectionSubTag text-small"> Navigating the Indian housing market is often riddled with uncertainty due to the vast price variations across different cities and even within them. Accurately predicting housing prices can empower potential buyers, guide investors, and inform policy decisions, but existing methods lack sufficient accuracy and scalability for nationwide implementation.</p>
             </div>
             <div class="thumbnail" id="about">
                 <img src="app/img/factors.jpg" alt="factors" class="imgFluid">
@@ -147,7 +147,7 @@
                     </select>
                 </div>
                 <div>
-                    <label for="area">Area:</label>
+                    <label for="area">Area (Sq. ft.):</label>
                     <input type="number" id="area" name="area">
                 </div>
                 <div>
@@ -160,12 +160,13 @@
                     </select>
                 </div>
                 <input type="submit" class="btn btn-dark" value="Submit">
+                <p>*Please reload the website to submit different values.</p>
             </form>
         </section>
-        
+        <section>
         <div id="prediction-result">
             <p class="prediction-placeholder">Predicted rent will be displayed here.</p>
-            <img id="loading-indicator" src="app/img/lenna.jpg" alt="Loading..." style="display: none;">
+            <img id="loading-indicator" src="app/img/loading.gif" alt="Loading..." style="display: none;">
         </div>
         </section>
 
